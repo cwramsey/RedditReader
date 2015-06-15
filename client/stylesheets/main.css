@@ -1,0 +1,25 @@
+.app {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.comment-link {
+    font-size: .8em;
+}
+
+.image-preview-holder {
+    margin-top: 10px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.image-preview {
+    display: none;
+    max-width: 100%;
+}
+
+.list-group-item {
+    padding-bottom: 25px;
+}

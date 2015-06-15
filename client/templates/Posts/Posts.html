@@ -1,0 +1,22 @@
+<template name="post">
+    <div class="list-group-item post" data-id="{{id}}">
+        <div class="row-picture">
+            {{#if thumbnail}}
+                <img class="icon shadow-z-1" src="{{thumbnail}}" alt="icon">
+            {{else}}
+                <i class="mdi-editor-insert-drive-file icon shadow-z-1"></i>
+            {{/if}}
+            <br class="clear" />
+        </div>
+        <div class="row-content">
+            <p class="list-group-item-text"><a href="{{url}}" target="_blank">{{title}}</a></p>
+            <p><a href="http://reddit.com{{permalink}}" target="_blank" class="comment-link">Comments <span class="comment-count">({{comment_count}})</span></a></p>
+            {{#if thumbnail}}
+                <p class="image-preview-holder">
+                    <img class="image-preview" src="{{url}}"/>
+                </p>
+            {{/if}}
+        </div>
+    </div>
+    <div class="list-group-separator"></div>
+</template>
